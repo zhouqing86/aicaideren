@@ -1,0 +1,129 @@
+html {
+  font-size: 18px; // by default font size is 16px for html tag.
+  overflow-x: hidden;
+}
+
+header,
+footer {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  font-family: AustinNewsHeadline-Roman;
+}
+
+p {
+  margin: 0;
+}
+
+.clearfix:after {
+  @include clear;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 $pagePadding;
+  @include extra-small-screen {
+    padding: 0 10px;
+  }
+}
+
+.app {
+  background-color: #f0f2f5;
+}
+
+.category-name {
+  font-size: $xxSmall;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  @include text-truncate;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.seperate-line {
+  border-bottom: solid 1px #d6d9da;
+  border-top: none;
+  margin: 8px 0 12px 0;
+}
+
+.big-screen-only {
+  display: block;
+  @include medium-screen {
+    display: none;
+  }
+}
+
+.media-big-only {
+  display: block;
+  @include small-screen {
+    display: none;
+  }
+}
+
+.small-media-only {
+  display: none;
+  @include medium-screen {
+    display: block;
+  }
+}
+
+.small-only {
+  display: none;
+  @include small-screen {
+    display: block;
+  }
+}
+
+.media-only {
+  display: none;
+  @include medium-screen {
+    display: block;
+  }
+  @include small-screen {
+    display: none;
+  }
+}
+
+.big-small-only {
+  display: block;
+  @include medium-screen {
+    display: none;
+  }
+  @include small-screen {
+    display: block;
+  }
+}

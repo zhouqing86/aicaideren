@@ -1,0 +1,50 @@
+@mixin large-screen() {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin medium-screen () {
+  @media screen and (max-width: 840px) {
+    @content;
+  }
+}
+@mixin small-screen() {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin extra-small-screen() {
+  @media screen and (max-width: 360px) {
+    @content;
+  }
+}
+@mixin line-clamp($line) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+@mixin clear {
+  clear: both;
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+@mixin text-truncate {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin text-truncate-before-icon {
+  @include text-truncate;
+  float: left;
+  box-sizing: border-box;
+  max-width: 100%;
+}
