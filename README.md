@@ -2,13 +2,20 @@
 
 ## Developer Setup
 
-#### install npm & dependencies
+### Prerequisites
 
 ```bash
 $ cd project/              
 $ nvm use 6.9.1                 
 $ sudo npm -g install gulp      
 $ npm install
+```
+
+设置git hooks:
+
+```bash
+echo $'#!/bin/sh\ncd project && gulp test' > .git/hooks/pre-push
+chmod +x .git/hooks/pre-push
 ```
 
 ### Building tasks

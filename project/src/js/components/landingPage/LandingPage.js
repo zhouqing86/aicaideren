@@ -9,7 +9,7 @@ export default class LandingPage extends React.Component {
   static fetchApiData(host, params, query) {
     const landingPageData = {
       test: 'test'
-    }
+    };
     return Promise.resolve(landingPageData);
   }
 
