@@ -19,6 +19,7 @@ export default function (reactRenderedBody, configuration, apiData) {
 
         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
         <meta name="mobile-web-app-capable" content="yes"/>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet"
               href=/assets/${configuration.assetsMappings["css/main.css"]} />
       </head>

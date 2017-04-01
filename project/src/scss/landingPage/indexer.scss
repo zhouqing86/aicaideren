@@ -1,0 +1,23 @@
+.landing-page {
+  .index {
+    margin: 0;
+    padding: 10px 0;
+
+    ul {
+      -webkit-margin-before: .5em;
+      -webkit-margin-after: .5em;
+      margin-left: 20px;
+      list-style-type: disc;
+      display: block;
+    }
+
+    li {
+      position: relative;
+      padding: 4px 0;
+      width: 100%;
+      font-size: 14px;
+      color: #4a4a4a;
+      word-wrap: break-word;
+    }
+  }
+}

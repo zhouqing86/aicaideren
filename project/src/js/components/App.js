@@ -1,6 +1,8 @@
 import React from 'react';
 import expressUseragent from 'express-useragent';
 import _ from 'lodash';
+import Header from './common/Header';
+import Footer from './common/Footer';
 
 let isFirstCall = true;
 
@@ -16,9 +18,9 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="app">
-        This is Header
+        <Header />
         {this.renderContent()}
-        This is footer
+        <Footer />
       </div>
     );
   }

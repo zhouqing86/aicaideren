@@ -2,7 +2,8 @@ import React from 'react';
 import _ from 'lodash';
 import when from 'when';
 import Helmet from 'react-helmet';
-
+import Indexer from './Indexer';
+import Articles from './Articles';
 
 export default class LandingPage extends React.Component {
 
@@ -16,7 +17,8 @@ export default class LandingPage extends React.Component {
   render() {
     return (
       <div className="landing-page">
-        Landing Page !!!!
+        <Indexer />
+        <Articles />
       </div>
     );
   }

@@ -28,6 +28,8 @@ app.use(cookieParser());
 
 app.use(useragent.express());
 
+app.use(favicon(path.join(__dirname, '../favicon.ico')));
+
 //Static assets
 app.use(`/assets`, function (req, res, next) {
   res.header("Cache-Control", "public, max-age=31536000");

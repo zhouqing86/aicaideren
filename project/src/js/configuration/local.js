@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 const serverConfig = {
   listeningHost: '0.0.0.0',
-  listeningPort: 8000,
+  listeningPort: 8888,
   externalServices: {
     apiHost: 'https://api.aicaidere.com'
   },
