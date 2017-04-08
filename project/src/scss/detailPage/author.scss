@@ -1,0 +1,45 @@
+.author-info {
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #b1b1b1;
+
+    .avatar {
+      vertical-align: middle;
+      display: inline-block;
+      line-height: 1;
+
+      img {
+        vertical-align: middle;
+        width: 34px;
+        height: 34px;
+        border-radius: 100px;
+        border: 1px solid #ddd;
+      }
+
+      .name {
+        margin: 0 5px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #484848;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    .label {
+      padding: 1px 2px;
+      font-size: 12px;
+      color: #e78170;
+      border: 1px solid #e78170;
+      border-radius: 3px;
+      vertical-align: middle;
+    }
+
+    .meta {
+      margin-top: 10px;
+
+      span {
+        margin-right: 10px;
+      }
+    }
+}

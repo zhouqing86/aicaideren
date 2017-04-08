@@ -1,0 +1,21 @@
+.detail-page {
+  @import 'author';
+  @import 'content';
+  padding: 52px 18px 0;
+
+  .title {
+    margin: 15px 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #2f2f2f;
+    word-break: break-word;
+    line-height: 1.4;
+  }
+
+  .copyright {
+    padding-top: 10px;
+    float: right;
+    font-size: 13px;
+    color: #e6e6e6;
+  }
+}

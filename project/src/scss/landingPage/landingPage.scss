@@ -1,6 +1,5 @@
-@import 'indexer';
-@import 'articles';
-
 .landing-page {
   padding: 52px 18px 0;
+  @import 'indexer';
+  @import 'articles';
 }
